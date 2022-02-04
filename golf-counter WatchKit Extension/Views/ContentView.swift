@@ -18,7 +18,14 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .environmentObject(Scores())
+        let previewDevices = ["Apple Watch Series 7 - 45mm" ,"Apple Watch Series 6 - 40mm"]
+        
+        ForEach(previewDevices, id: \.self) { deviceName in
+            ContentView()
+                .environmentObject(Scores())
+                .environmentObject(CountState())
+                .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDisplayName(deviceName)
+        }
     }
 }
