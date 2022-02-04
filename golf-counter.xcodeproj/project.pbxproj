@@ -17,6 +17,11 @@
 		F6F0235727AD3F0400973C06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F0235627AD3F0400973C06 /* Preview Assets.xcassets */; };
 		F6F0236C27AD416200973C06 /* ScoreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0236B27AD416200973C06 /* ScoreList.swift */; };
 		F6F0236E27AD41DF00973C06 /* Scores.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0236D27AD41DF00973C06 /* Scores.swift */; };
+		F6F0237427AD436400973C06 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0237327AD436400973C06 /* Counter.swift */; };
+		F6F0237A27AD479600973C06 /* SaveAndPutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0237927AD479600973C06 /* SaveAndPutter.swift */; };
+		F6F0237C27AD480F00973C06 /* CountState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0237B27AD480F00973C06 /* CountState.swift */; };
+		F6F0237E27AD4D0800973C06 /* InfoHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0237D27AD4D0800973C06 /* InfoHole.swift */; };
+		F6F0238027AD4D2800973C06 /* CountScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0237F27AD4D2800973C06 /* CountScore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,11 @@
 		F6F0235827AD3F0400973C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6F0236B27AD416200973C06 /* ScoreList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreList.swift; sourceTree = "<group>"; };
 		F6F0236D27AD41DF00973C06 /* Scores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scores.swift; sourceTree = "<group>"; };
+		F6F0237327AD436400973C06 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		F6F0237927AD479600973C06 /* SaveAndPutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAndPutter.swift; sourceTree = "<group>"; };
+		F6F0237B27AD480F00973C06 /* CountState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountState.swift; sourceTree = "<group>"; };
+		F6F0237D27AD4D0800973C06 /* InfoHole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHole.swift; sourceTree = "<group>"; };
+		F6F0237F27AD4D2800973C06 /* CountScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountScore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				F6F0236D27AD41DF00973C06 /* Scores.swift */,
+				F6F0237B27AD480F00973C06 /* CountState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +169,10 @@
 		F6F0236827AD413600973C06 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
+				F6F0237327AD436400973C06 /* Counter.swift */,
+				F6F0237D27AD4D0800973C06 /* InfoHole.swift */,
+				F6F0237F27AD4D2800973C06 /* CountScore.swift */,
+				F6F0237927AD479600973C06 /* SaveAndPutter.swift */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -304,11 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6F0237C27AD480F00973C06 /* CountState.swift in Sources */,
 				F6F0235027AD3F0300973C06 /* golf_counterApp.swift in Sources */,
 				F6F0236C27AD416200973C06 /* ScoreList.swift in Sources */,
+				F6F0237A27AD479600973C06 /* SaveAndPutter.swift in Sources */,
+				F6F0237427AD436400973C06 /* Counter.swift in Sources */,
 				F6F0236E27AD41DF00973C06 /* Scores.swift in Sources */,
+				F6F0238027AD4D2800973C06 /* CountScore.swift in Sources */,
 				F6F0234E27AD3F0300973C06 /* ContentView.swift in Sources */,
 				F6F0235227AD3F0300973C06 /* ComplicationController.swift in Sources */,
+				F6F0237E27AD4D0800973C06 /* InfoHole.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
