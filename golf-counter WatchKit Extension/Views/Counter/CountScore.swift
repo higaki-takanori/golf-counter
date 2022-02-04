@@ -64,9 +64,9 @@ struct CountScore: View {
 struct PlusbtnStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-            .padding(.vertical ,20.0)
+            .padding(.vertical ,0)
             .font(.largeTitle)
-            .frame(maxWidth: .infinity, minHeight: 48)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .foregroundColor(Color.black)
             .background(Color.green)
             .cornerRadius(12.0)
@@ -77,9 +77,9 @@ struct PlusbtnStyle: ButtonStyle {
 struct MinusbtnStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-            .padding(.vertical, 20.0)
+            .padding(.vertical, 0)
             .font(.largeTitle)
-            .frame(maxWidth: .infinity, minHeight: 48)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .foregroundColor(Color.black)
             .background(Color.red)
             .cornerRadius(12.0)
