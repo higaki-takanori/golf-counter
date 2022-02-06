@@ -16,7 +16,7 @@ final class Scores: ObservableObject {
     @Published var Putter = [Int](repeating: initNum, count: holeAll)
     @Published var ParNo = [Int](repeating: initNum, count: holeAll)
     
-    func initGlobalScores() {
+    func initScores() {
         self.Score = [Int](repeating: initNum, count: holeAll)
         self.Putter = [Int](repeating: initNum, count: holeAll)
         self.ParNo = [Int](repeating: initNum, count: holeAll)

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6973A9D27AD666100662109 /* SettingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973A9C27AD666100662109 /* SettingList.swift */; };
+		F6973A9F27AD66BB00662109 /* ResetScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973A9E27AD66BB00662109 /* ResetScore.swift */; };
 		F6F0233E27AD3F0100973C06 /* golf-counter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F6F0233D27AD3F0100973C06 /* golf-counter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F6F0234327AD3F0300973C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F0234227AD3F0300973C06 /* Assets.xcassets */; };
 		F6F0234927AD3F0300973C06 /* golf-counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6F0234827AD3F0300973C06 /* golf-counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -67,6 +69,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F6973A9C27AD666100662109 /* SettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingList.swift; sourceTree = "<group>"; };
+		F6973A9E27AD66BB00662109 /* ResetScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetScore.swift; sourceTree = "<group>"; };
 		F6F0233927AD3F0100973C06 /* golf-counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "golf-counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F0233D27AD3F0100973C06 /* golf-counter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "golf-counter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F0234227AD3F0300973C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 		F6F0236927AD414800973C06 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				F6973A9C27AD666100662109 /* SettingList.swift */,
+				F6973A9E27AD66BB00662109 /* ResetScore.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -321,6 +327,7 @@
 			files = (
 				F6F0237C27AD480F00973C06 /* CountState.swift in Sources */,
 				F6F0235027AD3F0300973C06 /* golf_counterApp.swift in Sources */,
+				F6973A9D27AD666100662109 /* SettingList.swift in Sources */,
 				F6F0236C27AD416200973C06 /* ScoreList.swift in Sources */,
 				F6F0237A27AD479600973C06 /* SaveAndPutter.swift in Sources */,
 				F6F0237427AD436400973C06 /* Counter.swift in Sources */,
@@ -328,6 +335,7 @@
 				F6F0238027AD4D2800973C06 /* CountScore.swift in Sources */,
 				F6F0234E27AD3F0300973C06 /* ContentView.swift in Sources */,
 				F6F0235227AD3F0300973C06 /* ComplicationController.swift in Sources */,
+				F6973A9F27AD66BB00662109 /* ResetScore.swift in Sources */,
 				F6F0237E27AD4D0800973C06 /* InfoHole.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
