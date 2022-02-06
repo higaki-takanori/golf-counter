@@ -15,6 +15,8 @@
 		F6F0235227AD3F0300973C06 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0235127AD3F0300973C06 /* ComplicationController.swift */; };
 		F6F0235427AD3F0400973C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F0235327AD3F0400973C06 /* Assets.xcassets */; };
 		F6F0235727AD3F0400973C06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F0235627AD3F0400973C06 /* Preview Assets.xcassets */; };
+		F6F0236C27AD416200973C06 /* ScoreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0236B27AD416200973C06 /* ScoreList.swift */; };
+		F6F0236E27AD41DF00973C06 /* Scores.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0236D27AD41DF00973C06 /* Scores.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		F6F0235327AD3F0400973C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6F0235627AD3F0400973C06 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F6F0235827AD3F0400973C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6F0236B27AD416200973C06 /* ScoreList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreList.swift; sourceTree = "<group>"; };
+		F6F0236D27AD41DF00973C06 /* Scores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scores.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +117,9 @@
 		F6F0234C27AD3F0300973C06 /* golf-counter WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F6F0234D27AD3F0300973C06 /* ContentView.swift */,
 				F6F0234F27AD3F0300973C06 /* golf_counterApp.swift */,
+				F6F0236727AD411600973C06 /* Models */,
+				F6F0236627AD3FEA00973C06 /* Views */,
 				F6F0235127AD3F0300973C06 /* ComplicationController.swift */,
 				F6F0235327AD3F0400973C06 /* Assets.xcassets */,
 				F6F0235827AD3F0400973C06 /* Info.plist */,
@@ -129,6 +134,47 @@
 				F6F0235627AD3F0400973C06 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F6F0236627AD3FEA00973C06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6F0234D27AD3F0300973C06 /* ContentView.swift */,
+				F6F0236A27AD414E00973C06 /* Score */,
+				F6F0236927AD414800973C06 /* Setting */,
+				F6F0236827AD413600973C06 /* Counter */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6F0236727AD411600973C06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6F0236D27AD41DF00973C06 /* Scores.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F6F0236827AD413600973C06 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		F6F0236927AD414800973C06 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		F6F0236A27AD414E00973C06 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				F6F0236B27AD416200973C06 /* ScoreList.swift */,
+			);
+			path = Score;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +305,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6F0235027AD3F0300973C06 /* golf_counterApp.swift in Sources */,
+				F6F0236C27AD416200973C06 /* ScoreList.swift in Sources */,
+				F6F0236E27AD41DF00973C06 /* Scores.swift in Sources */,
 				F6F0234E27AD3F0300973C06 /* ContentView.swift in Sources */,
 				F6F0235227AD3F0300973C06 /* ComplicationController.swift in Sources */,
 			);
