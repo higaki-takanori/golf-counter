@@ -16,7 +16,7 @@ struct CountScore: View {
             Button(action: {
                 if countState.isPutter {
                     if 0 < countState.Putter {
-                        knock(type: WKHapticType(rawValue: 7))
+                        knock(type: hapticType)
                         countState.Score = countState.Score - 1
                         countState.Putter = countState.Putter - 1
                     }
@@ -45,7 +45,7 @@ struct CountScore: View {
                         
             // Plus Botton
             Button(action: {
-                knock(type: WKHapticType(rawValue: 7))
+                knock(type: hapticType)
                 countState.Score = countState.Score + 1
                 if countState.isPutter {
                     countState.Putter = countState.Putter + 1
@@ -84,11 +84,6 @@ struct MinusbtnStyle: ButtonStyle {
             .background(Color.red)
             .cornerRadius(12.0)
     }
-}
-
-func knock(type: WKHapticType?) {
-    guard let hType = type else { return }
-    WKInterfaceDevice.current().play(hType)
 }
 
 

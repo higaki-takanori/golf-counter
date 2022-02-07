@@ -15,7 +15,7 @@ struct SaveAndPutter: View {
         HStack {
             // Putter Button
             Button(action: {
-                knock(type: WKHapticType(rawValue: 7))
+                knock(type: hapticType)
                 if countState.isPutter {
                     countState.watchColor = UIColor.black
                     countState.isPutter = false
@@ -34,7 +34,7 @@ struct SaveAndPutter: View {
             
             // Save Button
             Button(action: {
-                knock(type: WKHapticType(rawValue: 7))
+                knock(type: hapticType)
                 scores.Score[countState.HoleNo-1] = countState.Score
                 scores.Putter[countState.HoleNo-1] = countState.Putter
                 scores.ParNo[countState.HoleNo-1] = countState.ParNo
