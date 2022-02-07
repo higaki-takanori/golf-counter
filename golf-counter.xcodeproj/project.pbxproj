@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094E31E5FBE797E47BBF9F65 /* Pods_golf_counter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB98A6A4385D5AE2BF3FFB7 /* Pods_golf_counter.framework */; };
+		0E22DCFA587E8E9BE813064E /* Pods_golf_counter_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA0DA618546C8B60F4B4279C /* Pods_golf_counter_WatchKit_Extension.framework */; };
 		F6973A9D27AD666100662109 /* SettingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973A9C27AD666100662109 /* SettingList.swift */; };
 		F6973A9F27AD66BB00662109 /* ResetScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973A9E27AD66BB00662109 /* ResetScore.swift */; };
 		F6973AA327B136E800662109 /* haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973AA227B136E800662109 /* haptic.swift */; };
+		F6973AA527B1395700662109 /* PutterColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973AA427B1395600662109 /* PutterColor.swift */; };
 		F6F0233E27AD3F0100973C06 /* golf-counter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F6F0233D27AD3F0100973C06 /* golf-counter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F6F0234327AD3F0300973C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F0234227AD3F0300973C06 /* Assets.xcassets */; };
 		F6F0234927AD3F0300973C06 /* golf-counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6F0234827AD3F0300973C06 /* golf-counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -25,6 +28,7 @@
 		F6F0237C27AD480F00973C06 /* CountState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0237B27AD480F00973C06 /* CountState.swift */; };
 		F6F0237E27AD4D0800973C06 /* InfoHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0237D27AD4D0800973C06 /* InfoHole.swift */; };
 		F6F0238027AD4D2800973C06 /* CountScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F0237F27AD4D2800973C06 /* CountScore.swift */; };
+		F819664C38843E5C6F69B014 /* Pods_golf_counter_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804F09E1F555A2096BC28192 /* Pods_golf_counter_WatchKit_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,9 +74,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3AB98A6A4385D5AE2BF3FFB7 /* Pods_golf_counter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_golf_counter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44644BDCB1B6C222B4780688 /* Pods-golf-counter WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-golf-counter WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-golf-counter WatchKit Extension/Pods-golf-counter WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		804F09E1F555A2096BC28192 /* Pods_golf_counter_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_golf_counter_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DFB0C2616BF34DE81A20B2 /* Pods-golf-counter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-golf-counter.release.xcconfig"; path = "Target Support Files/Pods-golf-counter/Pods-golf-counter.release.xcconfig"; sourceTree = "<group>"; };
+		99325400B9F98841B32994E5 /* Pods-golf-counter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-golf-counter.debug.xcconfig"; path = "Target Support Files/Pods-golf-counter/Pods-golf-counter.debug.xcconfig"; sourceTree = "<group>"; };
+		9DB9E1742BC04EAA2249A86E /* Pods-golf-counter WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-golf-counter WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-golf-counter WatchKit App/Pods-golf-counter WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		BA5F290821F5988536C36EA5 /* Pods-golf-counter WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-golf-counter WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-golf-counter WatchKit App/Pods-golf-counter WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		DEFDECAAE15074C34887442E /* Pods-golf-counter WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-golf-counter WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-golf-counter WatchKit Extension/Pods-golf-counter WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		EA0DA618546C8B60F4B4279C /* Pods_golf_counter_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_golf_counter_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6973A9C27AD666100662109 /* SettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingList.swift; sourceTree = "<group>"; };
 		F6973A9E27AD66BB00662109 /* ResetScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetScore.swift; sourceTree = "<group>"; };
 		F6973AA227B136E800662109 /* haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = haptic.swift; sourceTree = "<group>"; };
+		F6973AA427B1395600662109 /* PutterColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutterColor.swift; sourceTree = "<group>"; };
 		F6F0233927AD3F0100973C06 /* golf-counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "golf-counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F0233D27AD3F0100973C06 /* golf-counter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "golf-counter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F0234227AD3F0300973C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,22 +107,65 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		968967C81386497756D32571 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094E31E5FBE797E47BBF9F65 /* Pods_golf_counter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B82675AAB84C5E2F8AF51582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F819664C38843E5C6F69B014 /* Pods_golf_counter_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6F0234527AD3F0300973C06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E22DCFA587E8E9BE813064E /* Pods_golf_counter_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F614C3E96DA10B37405C535 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AB98A6A4385D5AE2BF3FFB7 /* Pods_golf_counter.framework */,
+				804F09E1F555A2096BC28192 /* Pods_golf_counter_WatchKit_App.framework */,
+				EA0DA618546C8B60F4B4279C /* Pods_golf_counter_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AFA35D382FEACE23CB5F467 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99325400B9F98841B32994E5 /* Pods-golf-counter.debug.xcconfig */,
+				87DFB0C2616BF34DE81A20B2 /* Pods-golf-counter.release.xcconfig */,
+				9DB9E1742BC04EAA2249A86E /* Pods-golf-counter WatchKit App.debug.xcconfig */,
+				BA5F290821F5988536C36EA5 /* Pods-golf-counter WatchKit App.release.xcconfig */,
+				44644BDCB1B6C222B4780688 /* Pods-golf-counter WatchKit Extension.debug.xcconfig */,
+				DEFDECAAE15074C34887442E /* Pods-golf-counter WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F6F0233227AD3F0100973C06 = {
 			isa = PBXGroup;
 			children = (
 				F6F0234127AD3F0100973C06 /* golf-counter WatchKit App */,
 				F6F0234C27AD3F0300973C06 /* golf-counter WatchKit Extension */,
 				F6F0233A27AD3F0100973C06 /* Products */,
+				8AFA35D382FEACE23CB5F467 /* Pods */,
+				1F614C3E96DA10B37405C535 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,6 +246,7 @@
 			children = (
 				F6973A9C27AD666100662109 /* SettingList.swift */,
 				F6973A9E27AD66BB00662109 /* ResetScore.swift */,
+				F6973AA427B1395600662109 /* PutterColor.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -208,8 +266,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6F0236327AD3F0400973C06 /* Build configuration list for PBXNativeTarget "golf-counter" */;
 			buildPhases = (
+				1CDA778D7519754DFF52189A /* [CP] Check Pods Manifest.lock */,
 				F6F0233727AD3F0100973C06 /* Resources */,
 				F6F0236227AD3F0400973C06 /* Embed Watch Content */,
+				968967C81386497756D32571 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,8 +285,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6F0235F27AD3F0400973C06 /* Build configuration list for PBXNativeTarget "golf-counter WatchKit App" */;
 			buildPhases = (
+				3DB423E4C613F2720775FC4B /* [CP] Check Pods Manifest.lock */,
 				F6F0233B27AD3F0100973C06 /* Resources */,
 				F6F0235E27AD3F0400973C06 /* Embed App Extensions */,
+				B82675AAB84C5E2F8AF51582 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,9 +304,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6F0235B27AD3F0400973C06 /* Build configuration list for PBXNativeTarget "golf-counter WatchKit Extension" */;
 			buildPhases = (
+				921A6260D6017207D73531C5 /* [CP] Check Pods Manifest.lock */,
 				F6F0234427AD3F0300973C06 /* Sources */,
 				F6F0234527AD3F0300973C06 /* Frameworks */,
 				F6F0234627AD3F0300973C06 /* Resources */,
+				77EB8D16FCEB10B74A14DC57 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,6 +387,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CDA778D7519754DFF52189A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-golf-counter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DB423E4C613F2720775FC4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-golf-counter WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77EB8D16FCEB10B74A14DC57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-golf-counter WatchKit Extension/Pods-golf-counter WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-golf-counter WatchKit Extension/Pods-golf-counter WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-golf-counter WatchKit Extension/Pods-golf-counter WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		921A6260D6017207D73531C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-golf-counter WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6F0234427AD3F0300973C06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -333,6 +483,7 @@
 				F6973A9D27AD666100662109 /* SettingList.swift in Sources */,
 				F6F0236C27AD416200973C06 /* ScoreList.swift in Sources */,
 				F6F0237A27AD479600973C06 /* SaveAndPutter.swift in Sources */,
+				F6973AA527B1395700662109 /* PutterColor.swift in Sources */,
 				F6F0237427AD436400973C06 /* Counter.swift in Sources */,
 				F6F0236E27AD41DF00973C06 /* Scores.swift in Sources */,
 				F6F0238027AD4D2800973C06 /* CountScore.swift in Sources */,
@@ -476,6 +627,7 @@
 		};
 		F6F0235C27AD3F0400973C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44644BDCB1B6C222B4780688 /* Pods-golf-counter WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +660,7 @@
 		};
 		F6F0235D27AD3F0400973C06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEFDECAAE15074C34887442E /* Pods-golf-counter WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +693,7 @@
 		};
 		F6F0236027AD3F0400973C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB9E1742BC04EAA2249A86E /* Pods-golf-counter WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -565,6 +719,7 @@
 		};
 		F6F0236127AD3F0400973C06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA5F290821F5988536C36EA5 /* Pods-golf-counter WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -590,6 +745,7 @@
 		};
 		F6F0236427AD3F0400973C06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99325400B9F98841B32994E5 /* Pods-golf-counter.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -603,6 +759,7 @@
 		};
 		F6F0236527AD3F0400973C06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87DFB0C2616BF34DE81A20B2 /* Pods-golf-counter.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

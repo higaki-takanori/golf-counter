@@ -10,39 +10,35 @@ import SwiftUI
 struct ResetScore: View {
     @EnvironmentObject private var scores :Scores
     @EnvironmentObject private var countState :CountState
-//    @EnvironmentObject private var viewNo :ViewNo
+    //    @EnvironmentObject private var viewNo :ViewNo
     
     @State private var isReset = false
     
     var body: some View {
         if isReset {
-            ZStack {
-                List {
-                    Button(action: {
-                        scores.initScores()
-                        countState.initCountState()
-//                        viewNo.currentNo = ViewNoList.countViewNo.rawValue
-                    }) {
-                        Text("Reset")
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.red)
-                    }
-                    Button(action: {
-                        isReset = false
-                    }) {
-                        Text("Cancel")
-                    }
+            List {
+                Button(action: {
+                    scores.initScores()
+                    countState.initCountState()
+                    //                        viewNo.currentNo = ViewNoList.countViewNo.rawValue
+                }) {
+                    Text("Reset")
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.red)
+                }
+                Button(action: {
+                    isReset = false
+                }) {
+                    Text("Cancel")
                 }
             }
         } else {
-            ZStack {
-                List {
-                    Button(action: {
-                        isReset = true
-                    }) {
-                        Text("Score Reset")
-                            .fontWeight(.bold)
-                    }
+            List {
+                Button(action: {
+                    isReset = true
+                }) {
+                    Text("Score Reset")
+                        .fontWeight(.bold)
                 }
             }
         }
