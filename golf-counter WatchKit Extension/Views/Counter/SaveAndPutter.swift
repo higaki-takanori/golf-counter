@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import TSColorWheel
 
 struct SaveAndPutter: View {
     @EnvironmentObject private var scores :Scores
     @EnvironmentObject private var countState :CountState
+    @ObservedObject var colorWheelSettings = TSColorWheelSettings.shared
 
     var body: some View {
         HStack {
@@ -20,7 +22,8 @@ struct SaveAndPutter: View {
                     countState.watchColor = UIColor.black
                     countState.isPutter = false
                 } else {
-                    countState.watchColor = UIColor.init(_colorLiteralRed: 2.0, green: 6.0, blue: 9.0, alpha: 0.1)
+//                    countState.watchColor = UIColor.init(_colorLiteralRed: 2.0, green: 6.0, blue: 9.0, alpha: 0.1)
+                    countState.watchColor = colorWheelSettings.color
                     countState.isPutter = true
                 }
                 

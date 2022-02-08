@@ -9,16 +9,27 @@ import SwiftUI
 import TSColorWheel
 
 struct PutterColor: View {
-
+    
     @ObservedObject var colorWheelSettings = TSColorWheelSettings.shared
-
+    
     @EnvironmentObject private var countState :CountState
-   
+    
     var body: some View {
-        VStack {
-            Text("Select a Color")
-            TSColorWheel()
+        
+        VStack(spacing: 0) {
+            Spacer()
+                .frame(maxHeight: .infinity)
+            
+            DisplayColor()
+            
+            Spacer(minLength: 24)
+            
+            NavigationLink("Select Color", destination: SelectColor())
+            
+            Spacer()
+                .frame(maxHeight: .infinity)
         }
+        
     }
 }
 
