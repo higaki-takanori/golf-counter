@@ -23,7 +23,7 @@ struct CountScore: View {
                     
                 } else {
                     if 1 < countState.Score && countState.Putter < countState.Score {
-                        knock(type: WKHapticType(rawValue: 7))
+                        knock(type: hapticType)
                         countState.Score = countState.Score - 1
                     }
                 }

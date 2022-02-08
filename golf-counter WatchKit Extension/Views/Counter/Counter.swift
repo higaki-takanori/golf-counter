@@ -17,12 +17,15 @@ struct Counter: View {
             
             VStack {
                 InfoHole()
+                    .frame(height: 45)
+                
                 CountScore()
                     .frame(maxHeight: .infinity)
+                
                 SaveAndPutter()
+                    .ignoresSafeArea()
+                    .frame(maxHeight: .infinity)
             }
-//            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .padding(.vertical, -20.0)
         }
     }
 }
