@@ -9,11 +9,16 @@ import SwiftUI
 
 @main
 struct golf_counterApp: App {
+    @StateObject private var scores = Scores()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 ContentView()
+                    .environmentObject(Scores())
             }
         }
     }
 }
+
+
