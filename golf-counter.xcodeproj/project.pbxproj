@@ -15,7 +15,7 @@
 		F6973AA527B1395700662109 /* PutterColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973AA427B1395600662109 /* PutterColor.swift */; };
 		F6973AA827B15CF000662109 /* DisplayColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973AA727B15CF000662109 /* DisplayColor.swift */; };
 		F6973AAC27B15D4000662109 /* SelectColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973AAB27B15D4000662109 /* SelectColor.swift */; };
-		F6973AAE27B23D8700662109 /* VcConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973AAD27B23D8700662109 /* VcConstants.swift */; };
+		F6973AB227B28B0700662109 /* ViewNoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973AB127B28B0700662109 /* ViewNoList.swift */; };
 		F6F0233E27AD3F0100973C06 /* golf-counter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F6F0233D27AD3F0100973C06 /* golf-counter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F6F0234327AD3F0300973C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F0234227AD3F0300973C06 /* Assets.xcassets */; };
 		F6F0234927AD3F0300973C06 /* golf-counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6F0234827AD3F0300973C06 /* golf-counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -92,7 +92,7 @@
 		F6973AA427B1395600662109 /* PutterColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutterColor.swift; sourceTree = "<group>"; };
 		F6973AA727B15CF000662109 /* DisplayColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayColor.swift; sourceTree = "<group>"; };
 		F6973AAB27B15D4000662109 /* SelectColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectColor.swift; sourceTree = "<group>"; };
-		F6973AAD27B23D8700662109 /* VcConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcConstants.swift; sourceTree = "<group>"; };
+		F6973AB127B28B0700662109 /* ViewNoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewNoList.swift; sourceTree = "<group>"; };
 		F6F0233927AD3F0100973C06 /* golf-counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "golf-counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F0233D27AD3F0100973C06 /* golf-counter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "golf-counter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F0234227AD3F0300973C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -228,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				F6F0234D27AD3F0300973C06 /* ContentView.swift */,
+				F6973AB127B28B0700662109 /* ViewNoList.swift */,
 				F6973AA227B136E800662109 /* haptic.swift */,
 				F6F0236A27AD414E00973C06 /* Score */,
 				F6F0236927AD414800973C06 /* Setting */,
@@ -241,7 +242,6 @@
 			children = (
 				F6F0236D27AD41DF00973C06 /* Scores.swift */,
 				F6F0237B27AD480F00973C06 /* CountState.swift */,
-				F6973AAD27B23D8700662109 /* VcConstants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -501,10 +501,10 @@
 				F6F0237A27AD479600973C06 /* SaveAndPutter.swift in Sources */,
 				F6973AA527B1395700662109 /* PutterColor.swift in Sources */,
 				F6F0237427AD436400973C06 /* Counter.swift in Sources */,
+				F6973AB227B28B0700662109 /* ViewNoList.swift in Sources */,
 				F6F0236E27AD41DF00973C06 /* Scores.swift in Sources */,
 				F6F0238027AD4D2800973C06 /* CountScore.swift in Sources */,
 				F6F0234E27AD3F0300973C06 /* ContentView.swift in Sources */,
-				F6973AAE27B23D8700662109 /* VcConstants.swift in Sources */,
 				F6F0235227AD3F0300973C06 /* ComplicationController.swift in Sources */,
 				F6973A9F27AD66BB00662109 /* ResetScore.swift in Sources */,
 				F6973AAC27B15D4000662109 /* SelectColor.swift in Sources */,

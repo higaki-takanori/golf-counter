@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            ScoreList()
-            Counter()
-            SettingList()
+            ScoreList().tag(ViewNoList.scoreViewNo.rawValue)
+            Counter().tag(ViewNoList.countViewNo.rawValue)
+            SettingList().tag(ViewNoList.settingViewNo.rawValue)
         }
     }
 }

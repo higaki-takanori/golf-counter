@@ -12,12 +12,17 @@ struct ScoreList: View {
     
     var body: some View {
         List {
-            Text("Total    \(scores.Score.reduce(0, +)) ( \(scores.Putter.reduce(0, +)) )")
+            Text("Total    \(scores.Score.reduce(0, +)) ( \(scores.Putter.reduce(0, +)) ) \(scores.Score.reduce(0, +) - scores.ParNo.reduce(0, +))")
                 .fontWeight(.bold)
                 .foregroundColor(Color(hue: 0.001, saturation: 1.0, brightness: 1.0))
             
             ForEach(0..<18) { (row: Int) in
-                Text("\(row+1)H  PAR\(scores.ParNo[row])  \(scores.Score[row]) ( \(scores.Putter[row]) )")
+                if (scores.Score[row] - scores.ParNo[row]) > 0 {
+                    Text("\(row+1)H  PAR\(scores.ParNo[row])  \(scores.Score[row]) ( \(scores.Putter[row]) ) +\(scores.Score[row] - scores.ParNo[row])")
+                }
+                else {
+                    Text("\(row+1)H  PAR\(scores.ParNo[row])  \(scores.Score[row]) ( \(scores.Putter[row]) ) \(scores.Score[row] - scores.ParNo[row])")
+                }
             }
         }
     }
