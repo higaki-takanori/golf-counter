@@ -11,7 +11,6 @@ struct InfoHole: View {
     @EnvironmentObject private var countState :CountState
     
     let HoleArray = ["1H", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "10H", "11H", "12H", "13H", "14H", "15H", "16H", "17H", "18H"]
-    
     let ParNoArray = ["PAR3", "PAR4", "PAR5"]
     
     var body: some View {

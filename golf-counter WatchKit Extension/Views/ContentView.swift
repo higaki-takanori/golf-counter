@@ -12,6 +12,7 @@ struct ContentView: View {
         TabView {
             ScoreList()
             Counter()
+            SettingList()
         }
     }
 }
