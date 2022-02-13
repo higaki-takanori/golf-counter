@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F6973A9D27AD666100662109 /* SettingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973A9C27AD666100662109 /* SettingList.swift */; };
 		F6973A9F27AD66BB00662109 /* ResetScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973A9E27AD66BB00662109 /* ResetScore.swift */; };
+		F6973AA327B136E800662109 /* haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6973AA227B136E800662109 /* haptic.swift */; };
 		F6F0233E27AD3F0100973C06 /* golf-counter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F6F0233D27AD3F0100973C06 /* golf-counter WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F6F0234327AD3F0300973C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F0234227AD3F0300973C06 /* Assets.xcassets */; };
 		F6F0234927AD3F0300973C06 /* golf-counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6F0234827AD3F0300973C06 /* golf-counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -71,6 +72,7 @@
 /* Begin PBXFileReference section */
 		F6973A9C27AD666100662109 /* SettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingList.swift; sourceTree = "<group>"; };
 		F6973A9E27AD66BB00662109 /* ResetScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetScore.swift; sourceTree = "<group>"; };
+		F6973AA227B136E800662109 /* haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = haptic.swift; sourceTree = "<group>"; };
 		F6F0233927AD3F0100973C06 /* golf-counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "golf-counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F0233D27AD3F0100973C06 /* golf-counter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "golf-counter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F0234227AD3F0300973C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				F6F0234D27AD3F0300973C06 /* ContentView.swift */,
+				F6973AA227B136E800662109 /* haptic.swift */,
 				F6F0236A27AD414E00973C06 /* Score */,
 				F6F0236927AD414800973C06 /* Setting */,
 				F6F0236827AD413600973C06 /* Counter */,
@@ -337,6 +340,7 @@
 				F6F0235227AD3F0300973C06 /* ComplicationController.swift in Sources */,
 				F6973A9F27AD66BB00662109 /* ResetScore.swift in Sources */,
 				F6F0237E27AD4D0800973C06 /* InfoHole.swift in Sources */,
+				F6973AA327B136E800662109 /* haptic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
