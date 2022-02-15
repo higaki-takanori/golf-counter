@@ -37,7 +37,7 @@ struct CountScore: View {
                 Text("\(countState.Score)")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                
+                               
                 // Putter Text
                 Text("( \(countState.Putter) )")
                     .font(.title2)
