@@ -9,9 +9,16 @@ import SwiftUI
 
 struct SettingList: View {
     var body: some View {
-        List {
-            ResetScore()            
+        NavigationView {
+            List {
+                NavigationLink("Reset Score", destination: ResetScore())
+                NavigationLink("Putter Color", destination: PutterColor())
+            }
         }
+//        List {
+//            ResetScore()
+//            PutterColor()
+//        }
     }
 }
 
