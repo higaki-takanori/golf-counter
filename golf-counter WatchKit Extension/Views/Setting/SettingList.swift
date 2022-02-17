@@ -8,17 +8,34 @@
 import SwiftUI
 
 struct SettingList: View {
+//    @State private var isShowResetScore = false
+//    @State private var isShowPutterColor = false
+    
     var body: some View {
         NavigationView {
+//            Button(action: {
+//                isShowResetScore.toggle()
+//            }) {
+//                Text("Reset Score")
+//            }
+//            .sheet(isPresented: $isShowResetScore) {
+//                ResetScore()
+//            }
+//
+//
+//            Button(action: {
+//                isShowPutterColor.toggle()
+//            }) {
+//                Text("Putter Color")
+//            }
+//            .sheet(isPresented: $isShowPutterColor) {
+//                PutterColor()
+//            }
             List {
                 NavigationLink("Reset Score", destination: ResetScore())
                 NavigationLink("Putter Color", destination: PutterColor())
             }
         }
-//        List {
-//            ResetScore()
-//            PutterColor()
-//        }
     }
 }
 

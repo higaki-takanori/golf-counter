@@ -6,16 +6,11 @@
 //
 
 import SwiftUI
-import TSColorWheel
 
 struct PutterColor: View {
-    
-    @ObservedObject var colorWheelSettings = TSColorWheelSettings.shared
-    
-    @EnvironmentObject private var countState :CountState
+//    @State private var isShowDisplayColor = false
     
     var body: some View {
-        
         VStack(spacing: 0) {
             Spacer()
                 .frame(maxHeight: .infinity)
@@ -23,7 +18,15 @@ struct PutterColor: View {
             DisplayColor()
             
             Spacer(minLength: 24)
-            
+
+//            Button(action: {
+//                isShowDisplayColor.toggle()
+//            }) {
+//                Text("Select Color")
+//            }
+//            .sheet(isPresented: $isShowDisplayColor) {
+//                SelectColor()
+//            }
             NavigationLink("Select Color", destination: SelectColor())
             
             Spacer()
@@ -37,6 +40,5 @@ struct PutterColor: View {
 struct PutterColor_Previews: PreviewProvider {
     static var previews: some View {
         PutterColor()
-            .environmentObject(CountState())
     }
 }

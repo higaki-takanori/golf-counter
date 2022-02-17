@@ -10,7 +10,7 @@ import TSColorWheel
 
 struct DisplayColor: View {
     @ObservedObject var colorWheelSettings = TSColorWheelSettings.shared
-    @EnvironmentObject private var countState :CountState
+//    @EnvironmentObject private var countState :CountState
     
     var body: some View {
         VStack(spacing: 8) {
@@ -33,6 +33,6 @@ struct DisplayColor: View {
 struct DisplayColor_Previews: PreviewProvider {
     static var previews: some View {
         DisplayColor()
-            .environmentObject(CountState())
+//            .environmentObject(CountState())
     }
 }

@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var viewNo: ViewNo
+    
     var body: some View {
-        TabView {
+        TabView(selection: $viewNo.currentNo) {
             ScoreList().tag(ViewNoList.scoreViewNo.rawValue)
             Counter().tag(ViewNoList.countViewNo.rawValue)
             SettingList().tag(ViewNoList.settingViewNo.rawValue)
@@ -25,6 +27,7 @@ struct ContentView_Previews: PreviewProvider {
             ContentView()
                 .environmentObject(Scores())
                 .environmentObject(CountState())
+                .environmentObject(ViewNo())
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
         }

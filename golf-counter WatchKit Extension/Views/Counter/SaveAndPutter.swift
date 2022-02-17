@@ -11,8 +11,10 @@ import TSColorWheel
 struct SaveAndPutter: View {
     @EnvironmentObject private var scores :Scores
     @EnvironmentObject private var countState :CountState
+    @EnvironmentObject var viewNo: ViewNo
+    
     @ObservedObject var colorWheelSettings = TSColorWheelSettings.shared
-
+    
     var body: some View {
         HStack {
             // Putter Button
@@ -22,7 +24,6 @@ struct SaveAndPutter: View {
                     countState.watchColor = UIColor.black
                     countState.isPutter = false
                 } else {
-//                    countState.watchColor = UIColor.init(_colorLiteralRed: 2.0, green: 6.0, blue: 9.0, alpha: 0.1)
                     countState.watchColor = colorWheelSettings.color
                     countState.isPutter = true
                 }
@@ -32,7 +33,6 @@ struct SaveAndPutter: View {
                     .renderingMode(.template)
                     .foregroundColor(.white)
                     .opacity(countState.isPutter ? 1 : 0.4)
-                
             }
             
             // Save Button
@@ -44,7 +44,7 @@ struct SaveAndPutter: View {
                 if countState.HoleNo < 18 {
                     countState.nextHole()
                 } else {
-                    //                    viewNo = ViewNoList.scoreViewNo.rawValue
+                    viewNo.currentNo = ViewNoList.scoreViewNo.rawValue
                 }
             }) {
                 Image("save")
@@ -52,7 +52,6 @@ struct SaveAndPutter: View {
                     .foregroundColor(.white)
                 
             }
-            
         }
     }
 }
@@ -62,5 +61,6 @@ struct SaveAndPutter_Previews: PreviewProvider {
         SaveAndPutter()
             .environmentObject(Scores())
             .environmentObject(CountState())
+            .environmentObject(ViewNo())
     }
 }
